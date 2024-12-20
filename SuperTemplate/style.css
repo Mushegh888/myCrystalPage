@@ -1,0 +1,440 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0x;
+}
+
+/*menu*/
+.pad{
+	width: 100%;
+	background: white;
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+}
+.nav{
+	width: 80%;
+	margin-left: 10%;
+	top: 0px;
+	left: 0px;
+	padding: 10px 0px;
+}
+.nav a,.hiddenMenu a{
+	text-decoration: none;
+	color: #404040;
+}
+.nav a:hover,.hiddenMenu a:hover{
+	color: #5d962c;
+	transition: 0.7s;
+}
+.logo a{
+	color: #5d962c;
+	font-size: 28px;
+	font-weight: bold;
+}
+.logo a:hover{
+	color: #404040;
+	transition: 0.7s;
+}
+.list{
+	list-style: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.sidebar{
+	font-size: 28px;
+	text-align: right;
+	color: #5d962c;
+	cursor: pointer;
+}
+.sidebar i:hover{
+	color: #404040;
+	transition: 0.7s;
+}
+.hiddenMenu{
+	display: none;
+	animation-duration: 0.7s;
+}
+@keyframes unhide{
+	from{
+		margin-top: -100%;
+	}
+	to{
+		margin-top: 0px;
+	}
+}
+@keyframes hide{
+	from{
+		margin-top: 0px;
+	}
+	to{
+		margin-top: -100%;
+	}
+}
+.hiddenMenu ul{
+	width: 80%;
+	margin-left: 10%;
+	padding: 0px 0px;
+	font-size: 20px;
+	gap: 50px;
+	list-style: none;
+}
+.hiddenMenu hr{
+	width: 80%;
+	margin-left: 10%;
+}
+.active{
+	color: #5d962c!important;
+}
+
+/*slide*/
+.slide{
+	width: 100%;
+	height: fit-content;
+	margin-top: 70px;
+	position: relative;
+}
+.slide img{
+	width: 100%;
+	height: 200%;
+	filter: brightness(0.6);
+}
+.content{
+	width: 80%;
+	height: fit-content;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	transform: translate(0%,-50%);
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+.content button{
+	height: fit-content;
+	font-size: 23px;
+	font-weight: bold;
+	background: #5d962c;
+	border: none;
+	padding: 5px 10px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.content button:hover{
+	background: white;
+	color: #5d962c;
+	transition: 0.7s;
+}
+
+
+
+/*Studio*/
+.studio{
+	width: 100%;
+	height: fit-content;
+	background: white;
+	padding: 100px 0px;
+}
+.contain{
+	width: 80%;
+	height: fit-content;
+	margin-left: 10%;
+}
+.text{
+	width: 50%;
+}
+.text h1{
+	color: #5d962c;
+}
+.pictures{
+	width: 50%;
+	height: fit-content;
+}
+.picture{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+	gap: 10px;
+}
+.picture img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+/*team*/
+.team{
+	width: 100%;
+	height: fit-content;
+	padding: 50px 0px;
+	background: #404040;
+	color: white;
+}
+.team h1,.team p{
+	width: 60%;
+	margin-left: 20%;
+	text-align: center;
+}
+.team_grid{
+	width: 80%;
+	height: fit-content;
+	margin-left: 10%;
+	margin-top: 50px;
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 20px;
+	justify-content: center;
+}
+.person_img{
+	width: 100%;
+	height: 70%;
+	background-size: cover;
+}
+.textplace{
+	text-align: center;
+	height: fit-content;
+	padding: 5px 0px;
+	background: #303030;
+	text-transform: uppercase;
+}
+.textplace p{
+	color: #5d962c;
+}
+
+/*services*/
+.services{
+	width: 100%;
+	height: fit-content;
+	background: white;
+	padding: 40px 0px;
+}
+.services h1,.services p{
+	width: 60%;
+	margin-left: 20%;
+	text-align: center;
+}
+.services_grid{
+	margin-top: 50px;
+	width: 80%;
+	margin-left: 10%;
+	height: fit-content;
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+	justify-items: center;
+}
+.box{
+	display: grid;
+	grid-auto-flow: column;
+	text-align: left;
+}
+.klor{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #5d962c;
+	color: white;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box_text{
+	padding: 0px 10px;
+}
+.box_text h4,.box_text p{
+	width: 100%;
+	margin-left: 0px;
+	text-align: left;
+}
+.box_text h4{
+	color: #5d962c;
+}
+
+/*back*/
+.back{
+	width: 100%;
+	height: 500px;
+	background: url("road.jpg");
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.op{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: rgba(0, 0, 0, 0.4);
+}
+.back_info{
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(0,-50%);
+	color: white;
+	text-align: center;
+}
+.form_email{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+	height: 50px;
+	color: white;
+}
+
+.email{
+	background: rgba(67, 67, 67, 0.7);
+	border: none;
+	color: white;
+	padding: 0px 10px;
+}
+.email::placeholder{
+	color: white;
+}
+.form_email .but{
+	background: #5d962c;
+	background: rgba(100, 166, 52, 0.8);
+	text-transform: uppercase;
+	border: none;
+	color: white;
+}
+
+/*Work*/
+.work{
+	width: 100%;
+	background: #333333;
+	color: white;
+	padding: 50px 0px;
+}
+.pictures_grid{
+	width: 80%;
+	margin-left: 10%;
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+	gap: 10px;
+	margin-top: 20px;
+}
+.pic{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+/*universal*/
+.info{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+	text-align: center;
+}
+/*universal*/
+
+
+/*priceing*/
+.pricing{
+	padding: 50px 0px;
+}
+.price_grid{
+	width: 80%;
+	margin-left: 10%;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 20px;
+}
+
+.price_grid_item{
+	background: black;
+	display: grid;
+	grid-auto-flow: row;
+	padding: 40px 0px;
+	gap: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+.element{
+	padding: 0px 10px;
+}
+.price_but{
+	width: 80%;
+	margin-left: 10%;
+	text-transform: uppercase;
+	background: transparent;
+	border: solid 1px white;
+	color: white;
+}
+.price_but:hover{
+	background: white;
+	color: #5d962c;
+	transition: 1s;
+}
+
+/*Contact*/
+.contact{
+	width: 100%;
+	background: url("slide/img3.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	height: 600px;
+	position: relative;
+}
+.contact .op{
+	background: rgba(0, 0, 0, 0.3);
+}
+.contact .info{
+	position: absolute;
+	top: 50px;
+	color: white;
+}
+.contact_form{
+	width: 70%;
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 20px;
+}
+.contact_form form{
+	width: 100%;
+	display: flex;
+	gap: 20px;
+}
+.contact_form input{
+	width: 100%;
+	height: 50px;
+	border: none;
+	background: rgba(67, 67, 67, 0.7);
+	color: white;
+	padding: 0px 10px;
+}
+.contact_form input::placeholder{
+	color: white;
+}
+.contact textarea{
+	width: 100%;
+	background: rgba(67, 67, 67, 0.7);
+	color: white;
+	padding: 0px 10px;
+	height: 100px;
+	border: none;
+}
+.contact button{
+	width: 60%;
+	margin-left: 20%;
+	background: rgba(100, 166, 52, 0.8);
+	border: none;
+	height: 50px;
+	color: white;
+}
+.contact button:hover{
+	background: white;
+	color: #5d962c;
+	transition: 0.7s;
+}
